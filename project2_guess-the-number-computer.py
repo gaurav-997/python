@@ -8,6 +8,6 @@ while(user != computer):
         print("user is low")
     elif user >computer:
         print("user is high")
-    else:
-        print("both are equal congratualtions")
+    
+print("both are equal congratualtions")
     
