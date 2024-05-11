@@ -28,14 +28,12 @@ while chances:
             if correct_list == phrase:
                 gameover = True
                 print( "you won")
+                break
     if guess_latter not in phrase:
         chances -=1
         print(f" you have {chances} left")
         
-# if word match break the while loop 
-    if gameover == True:
-        break 
-# if user lost then print the actual word 
+# if user lost then print the actual word
     if chances == 0:
         print(phrase, "and you lose")
 
