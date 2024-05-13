@@ -17,8 +17,9 @@ correct_list = []
 for latter in phrase:
     correct_list += '_'
 print(correct_list)
- 
-   
+
+wrong_list = []
+
 while chances:
     guess_latter = input("guess a latter from a to z \t ").lower()
     for position in range(len(phrase)):
@@ -30,6 +31,8 @@ while chances:
                 print( "you won")
                 break
     if guess_latter not in phrase:
+        wrong_list.append(guess_latter)
+        print(wrong_list)
         chances -=1
         print(f" you have {chances} left")
         
