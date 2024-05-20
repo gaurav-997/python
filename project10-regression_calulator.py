@@ -12,7 +12,7 @@ def division(a,b):
 
 def calculator():
     operation = {"+":add, "-":substraction, "*":multiplication , "/":division}
-    num1 = int(input("please enter first number \t "))
+    num1 = float(input("please enter first number \t "))
 
     for keys in operation:
         print(keys)
@@ -20,7 +20,7 @@ def calculator():
     continue_operation = True
     while continue_operation != False:   
         output_symbol = input("Please select the operation \t")
-        num2 = int(input("please enter second number \t "))
+        num2 = float(input("please enter second number \t "))
         caluator_function = operation[output_symbol]
         output = caluator_function(num1,num2)
         print(output)
